@@ -1,3 +1,5 @@
+/**Code by Eric Jennings**/
+
 #include <SPI.h>
 #include <Wire.h>
 #include <Scout.h>
@@ -22,8 +24,8 @@ bool pPushed, iPushed, nPushed, oPushed;
 void setup() {
   Scout.setup();
 
-  /** Configure send and receive pins **/
-  /** CapacitiveSensor(sendPin, receivePin) **/
+/** Configure send and receive pins **/
+/** CapacitiveSensor(sendPin, receivePin) **/
   cap_P = CapacitiveSensor(8, A3);
   cap_P.set_CS_AutocaL_Millis(100);  // Turn off autocalibrate
   cap_P.set_CS_Timeout_Millis(100);         // Set Timeout to 100 ms
@@ -45,8 +47,8 @@ void loop() {
    Scout.loop();
    char buf[32];
    
-   /** Read capacitive electrodes **/
-   /** capacitiveSensor(numberOfSamples) **/
+/** Read capacitive electrodes **/
+/** capacitiveSensor(numberOfSamples) **/
    total_P =  cap_P.capacitiveSensor(5);
    delay(2);
    total_I =  cap_I.capacitiveSensor(5);

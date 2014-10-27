@@ -1,10 +1,12 @@
-// Eric's notes:
-// You can get the signal strength, attention, and meditation values directly by 
-// calling the scoutscript:  `print brain.signal`, `print brain.attention`, or 
-// `print brain.meditation`.  You can also define event handlers for `on.brain.signal`, 
-// `on.brain.attention`, or `on.brain.meditation` that are Scoutscript functions, 
-// and they’ll fire whenever the values update.
-
+/* In which Eric Jennings combines the Pinoccio bootstrap with kitschpatrol's
+Brain library for the NeuroSky MindFlex: https://github.com/kitschpatrol/Brain
+Eric's notes:
+You can get the signal strength, attention, and meditation values directly by 
+calling the scoutscript:  `print brain.signal`, `print brain.attention`, or 
+`print brain.meditation`.  You can also define event handlers for `on.brain.signal`, 
+`on.brain.attention`, or `on.brain.meditation` that are Scoutscript functions, 
+and they’ll fire whenever the values update.
+*/
 
 #include <SPI.h>
 #include <Wire.h>

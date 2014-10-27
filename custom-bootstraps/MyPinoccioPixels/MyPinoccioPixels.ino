@@ -1,3 +1,8 @@
+/*
+This is Hector's NeoPixelStripAnimator library: https://github.com/urtubia/NeoPixelStripAnimator
+With a couple of tweaks by Alex to customize it for my Pinoccio with an 8-long NeoPixel Stick from Adafruit.
+*/
+
 #include <SPI.h>
 #include <Wire.h>
 #include <Scout.h>
