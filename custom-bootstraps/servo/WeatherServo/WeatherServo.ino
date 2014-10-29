@@ -1,11 +1,13 @@
 /**
-This is the Pinoccio Bootstrap sketch from https://github.com/Pinoccio/library-pinoccio
+The original is the Pinoccio Bootstrap sketch from https://github.com/Pinoccio/library-pinoccio
 Modified by @JacobRosenthal to be a wrapper for the excellent TimerThree library
 from PJRC so you'll need that: http://www.pjrc.com/teensy/td_libs_TimerOne.html
+And then tweaked slightly by Alex so it will upload on her Scouts.
 
-Follow the directions there, but basically after uploading this you'll still have
+Follow the directions on the TimerOne page, but basically after uploading this you'll still have
 all your Scout and HQ functions but now you you can call the TimerThree functions
-from scoutscript. 
+from ScoutScript.
+
 Note: 
 You can only use pins 3, 4 and 5
 The interrupt functions are not available as they're not set up in Pinoccio yet
